@@ -1,6 +1,6 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# dependencies
+# Dependencies
 /node_modules
 /.pnp
 .pnp.*
@@ -10,32 +10,79 @@
 !.yarn/releases
 !.yarn/versions
 
-# testing
+# Testing
 /coverage
 
-# next.js
+# Next.js
 /.next/
 /out/
+.turbo/
 
-# production
+# Production
 /build
+/dist
 
-# misc
+# Misc & OS files
 .DS_Store
 *.pem
+.AppleDouble
+.LSOverride
+*.swp
+*.swo
+*~
+.vscode-server/
 
-# debug
+# IDE & Editor files
+.vscode/
+.idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+*.sublime-project
+
+# Debug logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
+lerna-debug.log*
 
-# env files (can opt-in for committing if needed)
-.env*
+# Environment files (keep .env.local template, ignore actual values)
+.env
+.env.local
+.env.*.local
 
-# vercel
+# Vercel & Deployment
 .vercel
+.netlify
 
-# typescript
+# TypeScript
 *.tsbuildinfo
 next-env.d.ts
+
+# Firebase
+.firebase/
+.firebaserc
+
+# Build artifacts
+dist/
+build/
+
+# Backup & temp files
+*.bak
+*.tmp
+*~
+.#*
+\#*#
+
+# OS generated files
+Thumbs.db
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
