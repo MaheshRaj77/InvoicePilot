@@ -1,0 +1,3 @@
+export default function OrdersPage() {
+  return <div className="space-y-6"><h2 className="text-2xl font-bold text-gray-900">Orders</h2><p className="text-gray-500">Orders page</p></div>;
+}
